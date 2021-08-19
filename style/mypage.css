@@ -1,0 +1,190 @@
+body {
+  background-color: rgb(248, 248, 248);
+  font-family: sans-serif;
+}
+#result {
+  margin: 0 auto;
+  width: 896px;
+}
+@media screen and (max-width: 500px) {
+  #result {
+    width: 100%;
+  }
+}
+
+#comment_container {
+  display: flex;
+  margin-bottom: 16px;
+}
+.icon {
+  border-radius: 50%;
+}
+.comment_box {
+  margin-left: 12px;
+}
+.username {
+  margin-top: 0;
+  font-size: 13px;
+  color: #030303;
+}
+.comment {
+  font-size: 14px;
+  color: #030303;
+}
+.date {
+  font-size: 13px;
+  color: #606060;
+}
+.none {
+  color: red;
+}
+.mypage_button {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+  .mypage_button {
+    width: 300px;
+  }
+}
+#logout a,
+#comment_list,
+#password_change,
+#thread_info {
+  color: blue;
+  text-decoration: none;
+}
+#logout a:hover,
+#comment_list:hover,
+#password_change:hover,
+#thread_info:hover {
+  text-decoration: underline;
+}
+.ex_comment_container {
+  width: 100%;
+}
+
+.top_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_container img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 500px) {
+  .top_container {
+    width: 320px;
+    margin: 10px auto;
+  }
+  .top_container h1 {
+    font-size: 15px;
+  }
+  .top_container img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#thread_info_list {
+  margin: 0 auto;
+  width: 896px;
+}
+@media screen and (max-width: 500px) {
+  #thread_info_list {
+    width: 100%;
+  }
+}
+
+/*--------------------------パスワード再設定-----------------------------*/
+@media screen and (max-width: 500px) {
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+.container2 {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center; /*上下中央揃え*/
+}
+.container {
+  background-color: white;
+  border: 1px solid;
+  border-color: rgb(213, 215, 219);
+  border-radius: 5px;
+  padding: 40px 40px;
+  width: 368px;
+  height: 600px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    border: none;
+    width: 100%;
+    padding: 0px;
+  }
+}
+.now_password,
+.new_password1,
+.new_password2 {
+  border: 1px solid;
+  border-color: rgb(213, 215, 219);
+  border-radius: 5px;
+  width: 366px;
+  height: 54px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 500px) {
+  .now_password,
+  .new_password1,
+  .new_password2 {
+    width: 300px;
+  }
+}
+.container3 {
+  height: 50px;
+  margin-top: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.link_area {
+  display: flex;
+  align-items: center;
+}
+.link_area a {
+  text-decoration: none;
+  color: #174ea6;
+  font-size: 14px;
+}
+.button_area,
+.button {
+  cursor: pointer;
+}
+.button_area {
+  display: flex;
+  align-items: center;
+}
+.button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  letter-spacing: initial;
+  background-color: rgb(0, 83, 201);
+}
+.button:hover {
+  opacity: 0.8;
+}
+.good:hover {
+  color: blue;
+}

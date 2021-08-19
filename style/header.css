@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family:sans-serif;
+  }
+  /*----------------------------ハンバーガーメニュー----------------------------*/
+  header{
+      height:50px;
+      position: relative;
+      background-color: white;
+  }
+  .hamburger_and_logo{
+    display: flex;
+  }
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburger span {
+    background: black;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+  }
+  .hamburger span:nth-of-type(1) {
+    top: 19px;
+  }
+  .hamburger span:nth-of-type(3) {
+    bottom: 19px;
+  }
+  /*---------------------メニュー-----------------------*/
+  .menu {
+    z-index:3;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top:0;
+    transform: translate(-300px);
+    transition: 0.3s ease-out;
+  }
+  .menu_bottom_border{
+    display: flex;
+      height:50px;
+      border-bottom: 1px solid rgb(225, 225, 225);
+  }
+  .menu-hamburger{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-hamburger:hover {
+    cursor: pointer;
+  }
+  .menu-hamburger span {
+    background: black;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+  }
+  .menu-hamburger span:nth-of-type(1) {
+    top: 19px;
+  }
+  .menu-hamburger span:nth-of-type(3) {
+    bottom: 19px;
+  }
+  .menu-content{
+      margin-top: 50px;
+  }
+  .menu-content a{
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  /*----------------------メニューにopenクラスがついたときのスタイル------------------------*/
+  .menu.open {
+    transform: translate(0);
+    transition: 0.3s ease-out;
+  }
+  /*--------------背景を黒くする、押したらメニューを閉じる--------------------*/
+  .menu-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  opacity: 0; /* 透明度を0にすることで隠す */
+  transition: opacity 0.3s; /* 透明度の0→1になる速度 */
+}
+.menu-background2{
+  width: 100%;
+  height: 100%;
+  opacity: 1; /* メニューが表示されているときには背景が表示 */
+}

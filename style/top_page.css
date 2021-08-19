@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#top {
+  position: relative;
+  height: 50px;
+  border-bottom: 2px solid;
+}
+#top span {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -50%); /*%の時、自分自身を100%とする*/
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+}
+
+/*------------------------------背景画像エリア------------------------------*/
+#background-image_area {
+  position: relative;
+  height: calc(100vh - 50px);
+  background-image: url("../image_top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#background-image_area h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.bia_br {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  #background-image_area h1 {
+    width: 80%;
+    font-size: 20px;
+  }
+  .bia_br {
+    display: block;
+  }
+}
+/*----------------------------aboutエリア--------------------------------*/
+#about {
+  height: 50vh;
+  text-align: center;
+  line-height: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 750px) {
+  #about {
+    height: auto;
+  }
+  #about_container p {
+    padding: 23px;
+  }
+}
+
+/*-------------------------ログインページ、新規登録ページ移動-----------------------------*/
+#button_area {
+  text-align: center;
+  background-color: rgb(248, 248, 248);
+  padding-top: 10vh;
+  height: 50vh;
+}
+#button_container {
+  width: 40vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 500px) {
+  #button_area {
+    height: auto;
+  }
+  #button_container {
+    width: 100vw;
+    flex-direction: column;
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 83, 201);
+  border-radius: 5px;
+  width: 200px;
+  height: 60px;
+}
+.button_link {
+  margin-top: 10vh;
+}
+@media screen and (max-width: 500px) {
+  .button_link {
+    margin: 10vh auto;
+  }
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button span {
+  color: white;
+}
+/*-------------------------フッター部分-----------------------------*/
+footer {
+  height: 30vh;
+  background-color: black;
+  position: relative;
+}
+.creater {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

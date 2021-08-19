@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+p {
+  color: #202124;
+}
+.join_title {
+  font-size: 24px;
+}
+@media screen and (max-width: 500px) {
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+.container2 {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center; /*上下中央揃え*/
+}
+@media screen and (max-width: 500px) {
+  .container2 {
+    display: block;
+  }
+}
+.container {
+  border: 1px solid;
+  border-color: rgb(213, 215, 219);
+  border-radius: 5px;
+  padding: 40px 40px;
+  width: 368px;
+  height: 500px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+    border: none;
+  }
+}
+.name {
+  border: 1px solid;
+  border-color: rgb(213, 215, 219);
+  border-radius: 5px;
+  width: 366px;
+  height: 54px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+.password {
+  border: 1px solid;
+  border-color: rgb(213, 215, 219);
+  border-radius: 5px;
+  width: 366px;
+  height: 54px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+@media screen and (max-width: 500px) {
+  .name,
+  .password {
+    width: 300px;
+  }
+}
+.file {
+  margin-top: 30px;
+}
+.container3 {
+  height: 50px;
+  margin-top: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.link_area {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #174ea6;
+  font-size: 14px;
+}
+.button_area {
+  display: flex;
+  align-items: center;
+}
+.button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  letter-spacing: initial;
+  background-color: rgb(0, 83, 201);
+}
+.button:hover {
+  opacity: 0.8;
+}

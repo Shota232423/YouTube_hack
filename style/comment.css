@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(248, 248, 248);
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.top_container {
+  width: 50%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+  .top_container {
+    width: 100%;
+  }
+}
+.title {
+  font-size: 18px;
+  color: #030303;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+#comment {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-width: thin;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  outline: none;
+  padding: 0;
+  font-size: 16px;
+}
+.comment_button {
+  text-align: right;
+  margin-top: 5px;
+}
+#ajax {
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  letter-spacing: initial;
+  background-color: rgb(0, 83, 201);
+}
+#ajax:hover {
+  opacity: 0.8;
+}
+
+#result {
+  width: 100%;
+}
+
+#comment_container {
+  display: flex;
+  margin-bottom: 16px;
+}
+.icon {
+  border-radius: 50%;
+}
+.comment_box {
+  margin-left: 12px;
+}
+.username {
+  margin-top: 0;
+  font-size: 13px;
+  color: #030303;
+}
+.comment {
+  font-size: 14px;
+  color: #030303;
+}
+.date {
+  font-size: 13px;
+  color: #606060;
+}
+
+.default {
+  display: inline-block;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+}
+.to_red {
+  background-color: red;
+}
+.good:hover {
+  color: blue;
+}

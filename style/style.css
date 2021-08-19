@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(248,248,248);
+    font-family:sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    display: flex;
+    margin-bottom:15px;
+    color:black;
+}
+@media screen and (max-width:500px) {
+    .box{
+        flex-direction: column;
+    }
+}
+.explain{
+    margin-left:15px;
+}
+@media screen and (max-width:500px) {
+    .explain{
+        margin-left: 0px;
+    }
+}
+.title{
+    font-size:18px;
+    font-weight:400;
+    color:#030303;
+}
+@media screen and (max-width:500px) {
+    .title{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+.creater{
+    color:#606060;
+    font-size:12px;
+}
+.date{
+    color:#606060;
+    font-size:12px;
+}
+
+@media screen and (max-width:500px) {
+    .creater,.date{
+        margin-left:7px;
+    }
+    .thumbnail img{
+        width:100%;
+    }
+}
