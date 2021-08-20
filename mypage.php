@@ -64,7 +64,7 @@ function get_img($username)
         $flag=false;
     }
 
-    $comments = $db->prepare('SELECT * FROM comment,thread_list WHERE username=? AND thread_list.id=comment.video_id ORDER BY comment_id DESC');
+    $comments = $db->prepare('SELECT *,comment.date AS comment_date FROM comment,thread_list WHERE username=? AND thread_list.id=comment.video_id ORDER BY comment_id DESC');
     $comments->execute(array($_GET['username']));
 
 
@@ -145,7 +145,7 @@ while ($row = $comments->fetch()) {
         echo "<div id=\"comment_container\">";
         echo "<img class=\"icon\" src=\"member_picture/".get_img($_GET['username']).".jpeg\" style=\"width: 35px; height:35px;\" alt=\"\">";
         echo "<div class=\"comment_box\">";
-        echo "<p class=\"username\">".$row['username']."<span class=\"date\">　".$row['date']."</span></p>";
+        echo "<p class=\"username\">".$row['username']."<span class=\"date\">　".$row['comment_date']."</span></p>";
         echo "<p class=\"comment\">".$row['comment']."</p>";
         if (session_conf($row['comment_id'])) {
             //trueの場合はto_redクラスがついている！！！過去に自分が「いいね」したコメント
