@@ -177,9 +177,6 @@ while ($row = $comments->fetch()) {
                     <p id="error_message" style="color:red"></p>
                     <p id="scucces_message" style="color:green"></p>
                     <div class="container3">
-                        <div class="link_area">
-                            <a href="../join/index.php">アカウントを作成</a>
-                        </div>
                         <div class="button_area">
                             <div class="button">変更</div>
                         </div>
