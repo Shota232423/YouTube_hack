@@ -95,6 +95,7 @@ a {
   align-items: center;
 }
 .button {
+  -webkit-appearance: none;
   padding: 10px 20px;
   border-radius: 3px;
   border: none;
