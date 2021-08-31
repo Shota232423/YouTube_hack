@@ -29,7 +29,11 @@ PHP HTML CSS JavaScript(jQuery)
 
 #### 使用したデータベース
 MySQL
-
+- youtube_hack_db<br>
+  - comment
+  - good
+  - members
+  - thread_list
 #### 使用したインフラ
 Heroku
 
